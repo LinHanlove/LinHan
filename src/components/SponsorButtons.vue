@@ -1,18 +1,17 @@
 <template>
   <p>
-    If you enjoy my work and find them useful,
-    consider sponsor me and the ecosystem to help Open Source sustainable. Thank you!
+    I really hope you can make friends. Please contact me on GitHub. Thank you!
   </p>
 
-  <p flex="~ gap-2 wrap items-center">
+  <!-- <p flex="~ gap-2 wrap items-center">
     <SponsorButtonCollective />
     <span op50 text-sm>
       <a href="/posts/sponsorship-forwarding" target="_blank">How does this work?</a>
     </span>
-  </p>
-  <p flex="~ gap-2 wrap">
+  </p> -->
+  <!-- <p flex="~ gap-2 wrap">
     <a
-      href="https://github.com/sponsors/antfu"
+      href="https://github.com/sponsors/LinHanlove"
       target="_blank"
       class="group btn-rose inline-block"
     >
@@ -22,8 +21,8 @@
         transition-all duration-200 ease-out
       />
       Sponsor to support Anthony
-    </a>
-    <!-- <a
+    </a> -->
+  <!-- <a
       href="https://afdian.net/a/antfu"
       target="_blank"
       class="group btn-yellow inline-block"
@@ -35,5 +34,5 @@
       />
       在爱发电上支持我
     </a> -->
-  </p>
+  <!-- </p> -->
 </template>

@@ -41,10 +41,7 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/talks" class="lt-md:hidden" title="Talks">
           Talks
         </RouterLink>
-        <RouterLink to="/sponsors-list" title="Sponsors">
-          <span class="lt-md:hidden">Sponsors</span>
-          <div i-ri-heart-line class="md:hidden" />
-        </RouterLink>
+
         <RouterLink to="/podcasts" class="lt-md:hidden" title="Podcasts">
           <div i-ri-mic-line />
         </RouterLink>
