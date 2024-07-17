@@ -14,11 +14,11 @@ The reason for it taking me so long to do this is because I am busy (enjoy) doin
 
 ### Fundamentals
 
-It begins with me trying to improve the DX using icons in [this post](/posts/journey-with-icons). At that time, Vue 3 just into RC, and Vite didn't reach 1.0 yet. Hearing a lot of how good Vue 3 and Vite are, I decided to give them a try on building the icon site I want to build for a long time. Since Vite is such a brand new thing, there aren't many tools/plugins out there, the ecosystem was way far from what Webpack has. I took that as a chance for me to dive deep into how Vite works while doing some contributions the ecosystem. Here is a few tools I made while building the app [Icônes](https://github.com/antfu/icones):
+It begins with me trying to improve the DX using icons in [this post](/posts/journey-with-icons). At that time, Vue 3 just into RC, and Vite didn't reach 1.0 yet. Hearing a lot of how good Vue 3 and Vite are, I decided to give them a try on building the icon site I want to build for a long time. Since Vite is such a brand new thing, there aren't many tools/plugins out there, the ecosystem was way far from what Webpack has. I took that as a chance for me to dive deep into how Vite works while doing some contributions the ecosystem. Here is a few tools I made while building the app [Icônes](https://github.com/LinHanlove/icones):
 
-- [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - On-demand components auto importing for Vite.
-- [vite-plugin-pwa](https://github.com/antfu/vite-plugin-pwa) - Zero-config PWA for Vite.
-- [vite-plugin-purge-icons](https://github.com/antfu/purge-icons) - Bundles icons on demand, with a Vite plugin.
+- [vite-plugin-components](https://github.com/LinHanlove/vite-plugin-components) - On-demand components auto importing for Vite.
+- [vite-plugin-pwa](https://github.com/LinHanlove/vite-plugin-pwa) - Zero-config PWA for Vite.
+- [vite-plugin-purge-icons](https://github.com/LinHanlove/purge-icons) - Bundles icons on demand, with a Vite plugin.
 
 Also found some awesome tools form the community:
 
@@ -80,7 +80,7 @@ const toggleDark = useToggle(isDark)
 
 After building Icônes, I started working on the [Codecember](http://codecember.ink/) project with [@octref](https://blog.matsu.io/about), an initiative of learning and creating generative arts in December. With the spirit of dogfooding, we chosen Vite for building the site. In Codecember we will need to have a prompt every day with some texts, code snippets, and demos. This comes with the problem that Vite does not have a plugin for handling markdown files at that moment, so of course, I made one myself.
 
-- [vite-plugin-vue-markdown](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown for Vite.
+- [vite-plugin-vue-markdown](https://github.com/LinHanlove/vite-plugin-vue-markdown) - Markdown for Vite.
 
 Basically, it uses [`markdown-it`](https://markdown-it.github.io/) to transform markdown into HTML and feed it into Vue's template compiler. As the generated template is handled by Vue, we can easily support Vue components inside Markdown.
 
@@ -90,7 +90,7 @@ Getting syntax highlight works in dark mode isn't an easy task as well. [Shiki](
 
 Fight with them for a while you might be able to ease the misalignment eventually. But what if we can have a smarter way to do this?
 
-- [prism-theme-vars](https://github.com/antfu/prism-theme-vars) - A customizable Prism.js theme using CSS variables.
+- [prism-theme-vars](https://github.com/LinHanlove/prism-theme-vars) - A customizable Prism.js theme using CSS variables.
 
 Instead of dealing with the lengthy CSS theme, now you can have one in less than 20 lines of CSS variables. For example:
 
@@ -155,7 +155,7 @@ That's all. You can also play with the themes in the [Playground](https://prism-
 
 While Codecember is more like a site than an app, we would need to do some server-side generation to improve our [SEO](https://searchengineland.com/guide/what-is-seo). Read quite a lot of code from [VitePress](https://github.com/vuejs/vitepress), I came up with this plugin:
 
-- [vite-ssg](https://github.com/antfu/vite-ssg) - Server-side generation for Vite.
+- [vite-ssg](https://github.com/LinHanlove/vite-ssg) - Server-side generation for Vite.
 
 The idea here is fairly simple: bundle the app entry, then for each route, dump the app using APIs from the [`@vue/server-renderer`](https://github.com/vuejs/core/tree/main/packages/server-renderer) package. Simplified code here:
 
@@ -179,9 +179,9 @@ await Promise.all(
 )
 ```
 
-The full code can be found [here](https://github.com/antfu/vite-ssg/blob/fa256449923e05e55bf15dcf4747d517bc22e33a/src/node/build.ts#L94-L104).
+The full code can be found [here](https://github.com/LinHanlove/vite-ssg/blob/fa256449923e05e55bf15dcf4747d517bc22e33a/src/node/build.ts#L94-L104).
 
-With the [@vueuse/head](https://github.com/vueuse/head) package made by [@egoist](https://github.com/egoist), I made the document head/meta manipulation in SSG with ease. Combining with [vite-plugin-vue-markdown](https://github.com/antfu/vite-plugin-vue-markdown), you can even use the frontmatter to set the meta (title, description, og:image, etc.).
+With the [@vueuse/head](https://github.com/vueuse/head) package made by [@egoist](https://github.com/egoist), I made the document head/meta manipulation in SSG with ease. Combining with [vite-plugin-vue-markdown](https://github.com/LinHanlove/vite-plugin-vue-markdown), you can even use the frontmatter to set the meta (title, description, og:image, etc.).
 
 ```html
 <script setup>
@@ -203,11 +203,11 @@ With the [@vueuse/head](https://github.com/vueuse/head) package made by [@egoist
 
 I found myself making small web apps frequently. Setting up plugins and configs for Vite kinda becomes the bottleneck for me to make my idea landded. So combining with those tools I am using, I made an opinionated template for myself but unexpectedly got quite some good feedback:
 
-- [Vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
+- [Vitesse](https://github.com/LinHanlove/vitesse) - Opinionated Vite Starter Template
 
 ## This Website
 
-This site is **made from [Vitesse](https://github.com/antfu/vitesse) combining with all the tools I mentioned above**. To be honest, even making a static site generator right is something hard to me, not to mention that most of the hard parts are already handled by Vite. I am really happy to see so many things I have learned and crafted along the way. And glad I can make these contributions to the Vite ecosystem, that someone could find my work useful for building their apps.
+This site is **made from [Vitesse](https://github.com/LinHanlove/vitesse) combining with all the tools I mentioned above**. To be honest, even making a static site generator right is something hard to me, not to mention that most of the hard parts are already handled by Vite. I am really happy to see so many things I have learned and crafted along the way. And glad I can make these contributions to the Vite ecosystem, that someone could find my work useful for building their apps.
 
 ## Thanks
 
@@ -230,4 +230,4 @@ Appreciation to my sponsors as well for supporting my works:
 
 And thank you for reading through!
 
-**This site is now open sourced at [antfu/antfu.me](https://github.com/antfu/antfu.me)**
+**This site is now open sourced at [antfu/antfu.me](https://github.com/LinHanlove/antfu.me)**

@@ -53,7 +53,7 @@ So happy the pandemic is close to the end, and I can finally join you in confere
 
 Oh by the way, **I am going to [Vue Amsterdam on February 9-10](https://vuejs.amsterdam/) in person**! It would be my first-ever in-person speaking. I am so excited to meet you there!
 
-Once we are settled down, we plan to travel around Europe and visit some of our friends. I will keep you updated on my [Mastodon](https://m.webtoo.ls/@antfu) and [Twitter](https://twitter.com/antfu7), let's have a cup of coffee if you are around!
+Once we are settled down, we plan to travel around Europe and visit some of our friends. I will keep you updated on my [Mastodon](https://m.webtoo.ls/@LinHan) and [Twitter](https://x.com/HanLinsonglove), let's have a cup of coffee if you are around!
 
 <figure>
   <img src="/images/a-paris-3.jpg" alt="Saint-Antoine des Quinze-Vingts" />

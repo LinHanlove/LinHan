@@ -25,4 +25,4 @@ A trick for this is to resolve the `package.json` instead, as the `package.json`
 '/Users/.../node_modules/vite'
 ```
 
-Update: or you can use my package [`local-pkg`](https://github.com/antfu/local-pkg) now :)
+Update: or you can use my package [`local-pkg`](https://github.com/LinHanlove/local-pkg) now :)

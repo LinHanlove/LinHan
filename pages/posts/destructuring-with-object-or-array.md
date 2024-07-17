@@ -13,7 +13,7 @@ image: '/images/destructuring.png'
 
 We see it quite useful in many scenarios, for example, value swapping, named arguments, objects shallow merging, array slicing, etc. Today I would like to share some of my immature thoughts on "destructuring" in some web frameworks.
 
-I am a Vue enthusiast for sure and I wrote a lot of my apps using it. And I did write React a while for my previous company ~~reluctantly~~. As the Vue 3.0 came out recently, its exciting Composition API provides quite similar abilities for abstracting. Inspired by [react-use](https://github.com/streamich/react-use), I wrote a composable utility collection library early this year called [VueUse](https://github.com/antfu/vueuse).
+I am a Vue enthusiast for sure and I wrote a lot of my apps using it. And I did write React a while for my previous company ~~reluctantly~~. As the Vue 3.0 came out recently, its exciting Composition API provides quite similar abilities for abstracting. Inspired by [react-use](https://github.com/streamich/react-use), I wrote a composable utility collection library early this year called [VueUse](https://github.com/LinHanlove/vueuse).
 
 Similar to React hooks, Vue's composable functions will take some arguments and returns some data and functions. JavaScript is just like other C-liked programming languages - only one return value is allowed. So a workaround for returning multiple values, we would commonly wrap them with an array or an object, and then destructure the returned arrays/objects. As you can already see, we are having two different philosophies here, using arrays or objects.
 
@@ -50,7 +50,7 @@ console.log(counter.value) // get
 counter.value++ // set
 ```
 
-Since we don't need to rename the same thing twice for getter and setter like React does, in [VueUse](https://github.com/antfu/vueuse), I implemented most of the functions with object returns, like:
+Since we don't need to rename the same thing twice for getter and setter like React does, in [VueUse](https://github.com/LinHanlove/vueuse), I implemented most of the functions with object returns, like:
 
 ```ts
 const { x, y } = useMouse()

@@ -99,7 +99,7 @@ const router = createRouter({ routes })
 
 Check [its docs](https://github.com/hannoeru/vite-plugin-pages) for more.
 
-### [`vite-plugin-components`](https://github.com/hannoeru/vite-plugin-components) by [@antfu](https://github.com/antfu)
+### [`vite-plugin-components`](https://github.com/hannoeru/vite-plugin-components) by [@LinHan](https://github.com/LinHanlove)
 
 In Vue, writing the name of the component four times in order to import them is kind of a pain for me. So I made this plugin to do the component auto-importing. Now you can put your components under `src/components` and then use them everywhere without needing to import them. We also have built-in support for auto importing component libraries with minimal configurations. For now, we have supported Vuetify, Ant Design Vue, Element Plus, Vant, and so on.
 
@@ -129,7 +129,7 @@ To:
 </template>
 ```
 
-### [`vite-plugin-icons`](https://github.com/hannoeru/vite-plugin-icons) by [@antfu](https://github.com/antfu)
+### [`vite-plugin-icons`](https://github.com/hannoeru/vite-plugin-icons) by [@LinHan](https://github.com/LinHanlove)
 
 Another one is `vite-plugin-icons`. It allows you to use icons from any icon set, for example, Material design icons and Font awesome. Which the on-demand spirit of Vite, this will only ship with the icons that you actually use. So you can say goodbye to the old-school icon font approach that downloads a huge font with all the icons that you don't actually need.
 
@@ -142,7 +142,7 @@ It also works well with the component auto importing, and you can use them like 
 </template>
 ```
 
-### [`vite-plugin-windicss`](https://github.com/windicss/vite-plugin-windicss) by [@antfu](https://github.com/antfu)
+### [`vite-plugin-windicss`](https://github.com/windicss/vite-plugin-windicss) by [@LinHan](https://github.com/LinHanlove)
 
 If you have ever used [Tailwind CSS](https://tailwindcss.com/), you must aware it's actually quite slow in the dev server as it ships all the utilities with megabytes of CSS to your client. This becomes the slowest part of my Vite app.
 
@@ -150,7 +150,7 @@ Luckily, we have a new thing called [Windi CSS](https://github.com/windicss/wind
 
 ### Try them all
 
-If you found them interesting and want to try it yourself, I also made a starter template call [Vitesse](https://github.com/antfu/vitesse), with all of them included and more features. Pull it down and check out.
+If you found them interesting and want to try it yourself, I also made a starter template call [Vitesse](https://github.com/LinHanlove/vitesse), with all of them included and more features. Pull it down and check out.
 
 These are only a small part of our plugins ecosystem, we have more of them available in the [awesome list] do remember to check them out.
 

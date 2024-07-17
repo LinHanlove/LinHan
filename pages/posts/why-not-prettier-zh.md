@@ -65,11 +65,11 @@ Prettier 作为代码格式化程序，只关心代码风格而完全不关心�
 但是，这种方法也给我带来了很多麻烦：
 
 <Tweet conversation="none">
-<p lang="en" dir="ltr">My points here:<br><br>1. Prettier Only is cool - It&#39;s out-of-box.<br>2. If you need to use ESLint, it can do the formatting as good as Prettier - and more configurable</p>&mdash; LinHan (@antfu7) <a href="https://twitter.com/antfu7/status/1279149211523538944?ref_src=twsrc%5Etfw">July 3, 2020</a>
+<p lang="en" dir="ltr">My points here:<br><br>1. Prettier Only is cool - It&#39;s out-of-box.<br>2. If you need to use ESLint, it can do the formatting as good as Prettier - and more configurable</p>&mdash; LinHan (@LinHan7) <a href="https://x.com/HanLinsonglove/status/1279149211523538944?ref_src=twsrc%5Etfw">July 3, 2020</a>
 </Tweet>
 
 <Tweet conversation="none">
-<p lang="en" dir="ltr">3. Prettier + ESLint still needs a lot of configs - It doesn&#39;t make your life easier.<br>4. You can have full control in ESLint but not in Prettier, mixing them together feels weird.<br>5. I don&#39;t think parsing two times can be faster (maybe I am wrong)</p>&mdash; LinHan (@antfu7) <a href="https://twitter.com/antfu7/status/1279149212974776320?ref_src=twsrc%5Etfw">July 3, 2020</a>
+<p lang="en" dir="ltr">3. Prettier + ESLint still needs a lot of configs - It doesn&#39;t make your life easier.<br>4. You can have full control in ESLint but not in Prettier, mixing them together feels weird.<br>5. I don&#39;t think parsing two times can be faster (maybe I am wrong)</p>&mdash; LinHan (@LinHan7) <a href="https://x.com/HanLinsonglove/status/1279149212974776320?ref_src=twsrc%5Etfw">July 3, 2020</a>
 </Tweet>
 
 > 我的观点如下：
@@ -88,24 +88,24 @@ Prettier 作为代码格式化程序，只关心代码风格而完全不关心�
 
 我花了一些时间配置我的 ESLint 并将其设置为预设配置：
 
-<GitHubLink repo="antfu/eslint-config" name="@antfu/eslint-config" />
+<GitHubLink repo="antfu/eslint-config" name="@LinHan/eslint-config" />
 
 从结果来看，使用 ESLint 其实也可以非常简单：
 
 ```bash
-npm i -D @antfu/eslint-config
+npm i -D @LinHan/eslint-config
 ```
 
 ```js
 // eslint.config.js
-import antfu from '@antfu/eslint-config'
+import antfu from '@LinHan/eslint-config'
 
 export default antfu({
   // 自定义配置
 })
 ```
 
-这样就可以了。配合 IDE 扩展，还可以在保存时触发自动修复。它的工作方式与 Prettier 类似，但当你要换行的时候尊重你的选择，并提供了许多 lint 的最佳实践。当然，这是基于我自己的需求的另一种 “固执己见的” 配置，但得益于新的 [Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)，它可以让你拥有 [完全的控制权](https://github.com/antfu/eslint-config#customization) 来微调每个细节。此外，你也可以随时 fork 它来制作你自己的版本。
+这样就可以了。配合 IDE 扩展，还可以在保存时触发自动修复。它的工作方式与 Prettier 类似，但当你要换行的时候尊重你的选择，并提供了许多 lint 的最佳实践。当然，这是基于我自己的需求的另一种 “固执己见的” 配置，但得益于新的 [Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)，它可以让你拥有 [完全的控制权](https://github.com/LinHanlove/eslint-config#customization) 来微调每个细节。此外，你也可以随时 fork 它来制作你自己的版本。
 
 > 注：你可能听到有人说 "不要使用 ESLint 进行格式化" - [这里有一些讨论和来自 ESLint 团队的回应](https://github.com/eslint/eslint.org/issues/435)，用于帮助你做出自己的判断。
 

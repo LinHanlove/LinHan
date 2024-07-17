@@ -29,7 +29,7 @@ Try hovering on each token to see the type information. Shiki runs [`oniguruma`]
 
 The Shiki integration allows you to provide [custom renderer](https://shiki.style/packages/twoslash#renderers) of how the HTML been generated based on AST. This allows us to have dual themes support, and also the syntax highlighting for the type information.
 
-Check [`@shikijs/twoslash`](https://shiki.style/packages/twoslash) and [commit for the integration on antfu.me](https://github.com/antfu/antfu.me/commit/d2dfb25139e9f2d42f4135998ad2052179237641#diff-6a3b01ba97829c9566ef2d8dc466ffcffb4bdac08706d3d6319e42e0aa6890dd), for more information :)
+Check [`@shikijs/twoslash`](https://shiki.style/packages/twoslash) and [commit for the integration on antfu.me](https://github.com/LinHanlove/antfu.me/commit/d2dfb25139e9f2d42f4135998ad2052179237641#diff-6a3b01ba97829c9566ef2d8dc466ffcffb4bdac08706d3d6319e42e0aa6890dd), for more information :)
 
 <details>
 <summary>The input code</summary>

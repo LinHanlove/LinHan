@@ -58,7 +58,7 @@ I am honestly super lucky to have the opportunity to work on numerous front-faci
 
 ## Sponsorships Forwarding on GitHub
 
-I am already [sponsoring a number of maintainers](https://github.com/antfu?tab=sponsoring) who I benefit a lot from. {GitHub Sponsors|https://github.com/sponsors} is a great platform. It [covers the transaction fees](https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors#about-github-sponsors), and provides great connections with sponsors, maintainers, and projects, making the discovery and sponsorship process smooth. However, while it is great for individual sponsors, it lacks the ability to forward sponsorships to other projects or maintainers. {@patak-dev} [raised this feature request for GitHub](https://github.com/orgs/community/discussions/10177) two years ago, which is currently the top-upvoted request from the community, but unfortunately, it has not been resolved yet.
+I am already [sponsoring a number of maintainers](https://github.com/LinHanlove?tab=sponsoring) who I benefit a lot from. {GitHub Sponsors|https://github.com/sponsors} is a great platform. It [covers the transaction fees](https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors#about-github-sponsors), and provides great connections with sponsors, maintainers, and projects, making the discovery and sponsorship process smooth. However, while it is great for individual sponsors, it lacks the ability to forward sponsorships to other projects or maintainers. {@patak-dev} [raised this feature request for GitHub](https://github.com/orgs/community/discussions/10177) two years ago, which is currently the top-upvoted request from the community, but unfortunately, it has not been resolved yet.
 
 Here, let's do some simple math to see why this feature is essential:
 
@@ -155,6 +155,6 @@ If I have convinced you this initiative is meaningful, use the buttons below to 
 
 ## Feedback
 
-I am eager to hear your feedback on this initiative. If you have any thoughts, concerns, or suggestions, please feel free to reach out to leave me a comment under [this tweet](https://twitter.com/antfu7/status/1781749305230885140) or [this toot](https://elk.zone/m.webtoo.ls/@antfu/112305352609322422). You can also mail me at hi@antfu.me.
+I am eager to hear your feedback on this initiative. If you have any thoughts, concerns, or suggestions, please feel free to reach out to leave me a comment under [this tweet](https://x.com/HanLinsonglove/status/1781749305230885140) or [this toot](https://elk.zone/m.webtoo.ls/@LinHan/112305352609322422). You can also mail me at hi@LinHan.me.
 
 Thank you for reading this long post. I hope we can take this initiative as a small step and make open-source better and more sustainable together. 💚

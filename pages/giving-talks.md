@@ -15,7 +15,7 @@ If you are organizing a frontend related conference or meetup, I'd be happy to g
 - I would expect my travel and accommodation to be covered.
 - I am holding a Chinese passport with Schengen visa. Which means for conferences outside of Schengen area (US, UK, etc.) I would need some assistance on the business visa application.
 
-You can reach me out at [talks@antfu.me](mailto:talks@antfu.me). Looking forward to it!
+You can reach me out at [talks@LinHan.me](mailto:talks@LinHan.me). Looking forward to it!
 
 ## Information
 
@@ -41,8 +41,8 @@ You can use the following information to present me:
   <TextCopy><a href="https://antfu.me" target="_blank">antfu.me</a></TextCopy>
 
   <div text-right pr2 op50 font-bold>GitHub</div>
-  <TextCopy><a href="https://github.com/antfu" target="_blank">@antfu</a></TextCopy>
+  <TextCopy><a href="https://github.com/LinHanlove" target="_blank">@LinHan</a></TextCopy>
 
   <div text-right pr2 op50 font-bold>Twitter</div>
-  <TextCopy><a href="https://twitter.com/antfu7" target="_blank">@antfu7</a></TextCopy>
+  <TextCopy><a href="https://x.com/HanLinsonglove" target="_blank">@LinHan7</a></TextCopy>
 </div>

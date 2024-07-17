@@ -23,7 +23,7 @@ In this post, I will share the continuation of my journey with icons and the too
 
 ## PurgeIcons & Its Limitations
 
-[PurgeIcons](https://github.com/antfu/purge-icons) is my first attempt to improve the loading speed of [Iconify](https://iconify.design/) - a united icon library that allows you to use any icons for any framework. The main problem is that it's purely client-side. Even it's flexible to work with any framework, the client-side requests inevitably introduce the flash of missing icons. To solve that, I made PurgeIcons by statically scanning your icon usages and bundle them together with your app, so the Iconify runtime could load them without additional requests.
+[PurgeIcons](https://github.com/LinHanlove/purge-icons) is my first attempt to improve the loading speed of [Iconify](https://iconify.design/) - a united icon library that allows you to use any icons for any framework. The main problem is that it's purely client-side. Even it's flexible to work with any framework, the client-side requests inevitably introduce the flash of missing icons. To solve that, I made PurgeIcons by statically scanning your icon usages and bundle them together with your app, so the Iconify runtime could load them without additional requests.
 
 This solution works, but it only solves the problem partially. As the icons are bundled within JavaScript and functions outside the frameworks, it's not ideal for working with framework-specific features like server-side rendering/generation, props passing, etc. We need to find a better way of doing it.
 
@@ -32,7 +32,7 @@ This solution works, but it only solves the problem partially. As the icons are 
 One of the core-concept of Vite is that everything is **on-demand**. Modules get transpiled only when they are being requested. In this way, the Vite server starts immediately without the need to bundle your entire app. Additionally, [Vite's plugin API](https://vitejs.dev/guide/api-plugin.html) is an extension on top of [Rollup's plugin system](https://rollupjs.org/guide/en/#plugin-development), which allows you to do some [custom transformations](https://rollupjs.org/guide/en/#transform) to the modules.
 
 So, if we think in Vite's way - maybe we could solve this at compile-time instead of client-side! By using [virtual modules](https://vitejs.dev/guide/api-plugin.html#importing-a-virtual-file), I was able to serve the icons as components **on-the-fly** and made it as
-[`vite-plugin-icons`](https://github.com/antfu/unplugin-icons) (renamed to `unplugin-icons` later on).
+[`vite-plugin-icons`](https://github.com/LinHanlove/unplugin-icons) (renamed to `unplugin-icons` later on).
 
 ```ts
 // vite.config.js

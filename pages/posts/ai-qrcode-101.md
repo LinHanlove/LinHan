@@ -94,7 +94,7 @@ When the images are generated, we will use a QR Code scanner to verify if the co
 
 If your goal is to make a more blended-in QR Code, and you are okay with the code not being scannable by all QR Code readers, it's better to use an error-tolerant scanner to verify. We recommend using iOS's code **scanner from the Control Center**, or the scanner from [WeChat](https://www.wechat.com/en/) to verify your QR Code. They are the most tolerant ones we found so far.
 
-Meanwhile, if you failed to find a good scanner on your phone, or want to verify the QR Codes directly in your computer, we recently enrolled a [new scanner in Anthony's QR Toolkit](https://qrcode.antfu.me/#scan), based on [WeChat's open sourced algorithm](https://docs.opencv.org/4.5.4/d5/d04/classcv_1_1wechat__qrcode_1_1WeChatQRCode.html) (Ported to WebAssembly, source code at [antfu/qr-scanner-wechat](https://github.com/antfu/qr-scanner-wechat)).
+Meanwhile, if you failed to find a good scanner on your phone, or want to verify the QR Codes directly in your computer, we recently enrolled a [new scanner in Anthony's QR Toolkit](https://qrcode.antfu.me/#scan), based on [WeChat's open sourced algorithm](https://docs.opencv.org/4.5.4/d5/d04/classcv_1_1wechat__qrcode_1_1WeChatQRCode.html) (Ported to WebAssembly, source code at [antfu/qr-scanner-wechat](https://github.com/LinHanlove/qr-scanner-wechat)).
 
 ![](/images/ai-qrcode-101-toolkit-scanner.png)
 
@@ -787,4 +787,4 @@ Similarly, we could combing with QR Code, or anything you can think of:
 
 This guide is aimed to be a one-stop documentations and references for the community to learn about the QR Code models and how to use them.
 
-If you are interested in contributing to this post, fixing typos, or adding new ideas, you can [edit this page on GitHub](https://github.com/antfu/antfu.me/edit/main/pages/posts/ai-qrcode-101.md). Or if you are not familiar with Git, you can also go to [Anthony's Discord server](https://chat.antfu.me) and discuss with us.
+If you are interested in contributing to this post, fixing typos, or adding new ideas, you can [edit this page on GitHub](https://github.com/LinHanlove/antfu.me/edit/main/pages/posts/ai-qrcode-101.md). Or if you are not familiar with Git, you can also go to [Anthony's Discord server](https://chat.antfu.me) and discuss with us.

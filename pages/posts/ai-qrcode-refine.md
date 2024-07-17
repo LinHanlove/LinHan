@@ -145,7 +145,7 @@ I hope you enjoy the walkthrough. If you just started doing AI QR Code, give a t
 
 <div i-ri-qr-code-line /> <a href="https://qrcode.antfu.me/" target="_blank">Anthony's QR Code Toolkit</a><br>
 
-<div i-ri-github-fill /> <a href="https://github.com/antfu/qrcode-toolkit" target="_blank" font-mono>antfu/qrcode-toolkit</a>
+<div i-ri-github-fill /> <a href="https://github.com/LinHanlove/qrcode-toolkit" target="_blank" font-mono>antfu/qrcode-toolkit</a>
 
 Join my [<span op75 i-simple-icons-discord /> Discord Server](https://chat.antfu.me), share what you are working on, and let's explore more together!
 

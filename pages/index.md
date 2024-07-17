@@ -38,7 +38,7 @@ Find me on
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://github.com/LinHanlove" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
-  <!-- <a href="https://elk.zone/m.webtoo.ls/@antfu" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a>
+  <!-- <a href="https://elk.zone/m.webtoo.ls/@LinHan" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a>
   <a href="https://www.twitter.com/antfu7" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
   <a href="https://chat.antfu.me" target="_blank"><span op75 i-simple-icons-discord /> Discord Server</a>
   <a href="https://www.youtube.com/anthonyfu7" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>

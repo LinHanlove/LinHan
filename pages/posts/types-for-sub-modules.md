@@ -43,7 +43,7 @@ export * from './dist/foo.d.ts'
 
 Which solve the problem, but also making your root directory quite messy.
 
-Until [@tmkx](https://github.com/tmkx) [shared me](https://github.com/antfu/unplugin-auto-import/pull/120) this solution:
+Until [@tmkx](https://github.com/tmkx) [shared me](https://github.com/LinHanlove/unplugin-auto-import/pull/120) this solution:
 
 ```json
 {

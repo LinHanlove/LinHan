@@ -10,7 +10,7 @@ description: 纯 CSS 中的图标解决方案
 
 > 感谢印记中文的 [QC-L](https://github.com/QC-L) 对本文进行翻译，英文原文: [English Version](/posts/icons-in-pure-css)。
 
-在 [重新构想原子化 CSS](/posts/reimagine-atomic-css#pure-css-icons) 中，我提到了 [UnoCSS](https://github.com/antfu/unocss) 的一个预设，它提供了**在纯 CSS 中按需使用任何图标的能力**。在这篇文章中，我想和大家分享下它的工作原理。
+在 [重新构想原子化 CSS](/posts/reimagine-atomic-css#pure-css-icons) 中，我提到了 [UnoCSS](https://github.com/LinHanlove/unocss) 的一个预设，它提供了**在纯 CSS 中按需使用任何图标的能力**。在这篇文章中，我想和大家分享下它的工作原理。
 
 ## 我的图标探索之旅
 
@@ -27,7 +27,7 @@ description: 纯 CSS 中的图标解决方案
 
 ## 我的方案
 
-这个方案来源于社区小伙伴 [@husayt](https://github.com/husayt) 在 `unplugin-icons` 中提出 [需求](https://github.com/antfu/unplugin-icons/issues/88) 并由 [@userquin](https://github.com/userquin) 在 [此 PR 中](https://github.com/antfu/unplugin-icons/pull/90) 提供了初版的实现。这个方案非常简单，用 [DataURI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) 中的图标作为背景图，并生成如下 CSS。
+这个方案来源于社区小伙伴 [@husayt](https://github.com/husayt) 在 `unplugin-icons` 中提出 [需求](https://github.com/LinHanlove/unplugin-icons/issues/88) 并由 [@userquin](https://github.com/userquin) 在 [此 PR 中](https://github.com/LinHanlove/unplugin-icons/pull/90) 提供了初版的实现。这个方案非常简单，用 [DataURI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) 中的图标作为背景图，并生成如下 CSS。
 
 ```css
 .my-icon {
@@ -83,8 +83,8 @@ function encodeSvg(svg: string) {
     .replace(/"/g, '\'')
     .replace(/%/g, '%25')
     .replace(/#/g, '%23')
-    .replace(/{/g, '%7B')
-    .replace(/}/g, '%7D')
+    .replace(/\{/g, '%7B')
+    .replace(/\}/g, '%7D')
     .replace(/</g, '%3C')
     .replace(/>/g, '%3E')
 }
@@ -212,7 +212,7 @@ else {
 
 ## 使用
 
-如果你想在项目中尝试这个图标解决方案，你可以安装 [UnoCSS](https://github.com/antfu/unocss) 和图标预设：
+如果你想在项目中尝试这个图标解决方案，你可以安装 [UnoCSS](https://github.com/LinHanlove/unocss) 和图标预设：
 
 ```bash
 npm i -D unocss @unocss/preset-icons @iconify/json

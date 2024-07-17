@@ -9,7 +9,7 @@ import { Feed } from 'feed'
 const DOMAIN = 'https://antfu.me'
 const AUTHOR = {
   name: 'LinHan',
-  email: 'hi@antfu.me',
+  email: 'hi@LinHan.me',
   link: DOMAIN,
 }
 const markdown = MarkdownIt({

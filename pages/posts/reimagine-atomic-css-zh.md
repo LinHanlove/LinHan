@@ -44,13 +44,13 @@ John Polacek 在 [文章 Let’s Define Exactly What Atomic CSS is](https://css-
 
 ## 背景
 
-在正式开始前，先来聊聊背景。如果你还不认识我，我叫 LinHan，是 [Vite](https://vitejs.dev/) 团队的成员，也是 [Vitesse](https://github.com/antfu/vitesse) (Vite 社区最受欢迎的起手模板之一) 的作者。我享受原子化 CSS 带来的快速开发体验，而因此选择了 [Tailwind CSS](https://tailwindcss.com/) 作为 Vitesse 的默认 UI 框架。虽然 Vite 较 Webpack 等工具相比，在加载速度上有了大幅提升，但由于 Tailwind 生成了数 MB 的 CSS，使得加载与更新 CSS 成为了整个 Vite 应用的性能瓶颈。我曾以为这是使用为了原子式 CSS 的一种权衡，直到我发现了 [Windi CSS](https://cn.windicss.org)。
+在正式开始前，先来聊聊背景。如果你还不认识我，我叫 LinHan，是 [Vite](https://vitejs.dev/) 团队的成员，也是 [Vitesse](https://github.com/LinHanlove/vitesse) (Vite 社区最受欢迎的起手模板之一) 的作者。我享受原子化 CSS 带来的快速开发体验，而因此选择了 [Tailwind CSS](https://tailwindcss.com/) 作为 Vitesse 的默认 UI 框架。虽然 Vite 较 Webpack 等工具相比，在加载速度上有了大幅提升，但由于 Tailwind 生成了数 MB 的 CSS，使得加载与更新 CSS 成为了整个 Vite 应用的性能瓶颈。我曾以为这是使用为了原子式 CSS 的一种权衡，直到我发现了 [Windi CSS](https://cn.windicss.org)。
 
 <img src="/images/discover-windicss-zh.png" class="transform scale-110 py-2"/>
 
-[Windi CSS](https://cn.windicss.org) 是从零开始编写的 Tailwind CSS 的替代方案。它的零依赖，也不要求用户安装 PostCSS 和 Autoprefixer。更为重要的是，它支持 **按需生成**。Windi CSS 不会一次生成所有的 CSS，而是只会生成你在代码中实际使用到的原子化 CSS。这与 Vite 按需使用的理念不谋而合，也因此，我为它编写了 [一个 Vite 插件](https://github.com/windicss/vite-plugin-windicss)。不出所料，从一个简单的测试上可以看到它比 Tailwind 要快了 [20~100 倍](https://twitter.com/antfu7/status/1361398324587163648)。
+[Windi CSS](https://cn.windicss.org) 是从零开始编写的 Tailwind CSS 的替代方案。它的零依赖，也不要求用户安装 PostCSS 和 Autoprefixer。更为重要的是，它支持 **按需生成**。Windi CSS 不会一次生成所有的 CSS，而是只会生成你在代码中实际使用到的原子化 CSS。这与 Vite 按需使用的理念不谋而合，也因此，我为它编写了 [一个 Vite 插件](https://github.com/windicss/vite-plugin-windicss)。不出所料，从一个简单的测试上可以看到它比 Tailwind 要快了 [20~100 倍](https://x.com/HanLinsonglove/status/1361398324587163648)。
 
-项目进展相当顺利，Windi CSS 也快速成长为一个团队，我们也引入了许多创新，如 [自动值推导](https://cn.windicss.org/features/value-auto-infer.html)，[可变修饰组](https://windicss.org/features/variant-groups.html)，[Shortcuts](https://windicss.org/features/shortcuts.html)，[在 DevTools 中进行设计](https://twitter.com/antfu7/status/1372244287975387145)，[属性化模式](https://twitter.com/windi_css/status/1387460661135896577) 等。作为结果，Tailwind 也 [因此](https://twitter.com/adamwathan/status/1371542711086559237?s=20) 使用了同样的技术并推出了自己的 [JIT 按需引擎](https://tailwindcss.com/docs/just-in-time-mode)。
+项目进展相当顺利，Windi CSS 也快速成长为一个团队，我们也引入了许多创新，如 [自动值推导](https://cn.windicss.org/features/value-auto-infer.html)，[可变修饰组](https://windicss.org/features/variant-groups.html)，[Shortcuts](https://windicss.org/features/shortcuts.html)，[在 DevTools 中进行设计](https://x.com/HanLinsonglove/status/1372244287975387145)，[属性化模式](https://twitter.com/windi_css/status/1387460661135896577) 等。作为结果，Tailwind 也 [因此](https://twitter.com/adamwathan/status/1371542711086559237?s=20) 使用了同样的技术并推出了自己的 [JIT 按需引擎](https://tailwindcss.com/docs/just-in-time-mode)。
 
 ## 剖析原子化 CSS
 
@@ -135,7 +135,7 @@ chokidar.watch(include).on('change', (event, path) => {
 })
 ```
 
-因此，通过按需生成方式，Windi CSS 获得了比传统的 Tailwind CSS [快 100 倍左右](https://twitter.com/antfu7/status/1361398324587163648) 的性能。
+因此，通过按需生成方式，Windi CSS 获得了比传统的 Tailwind CSS [快 100 倍左右](https://x.com/HanLinsonglove/status/1361398324587163648) 的性能。
 
 ## 痛痒
 
@@ -228,7 +228,7 @@ Tailwind 的 API 和插件系统沿用了旧的思维方式进行设计，并不
 
 ## 向你介绍 UnoCSS
 
-[**UnoCSS**](https://github.com/antfu/unocss) - 具有高性能且极具灵活性的即时原子化 CSS 引擎。
+[**UnoCSS**](https://github.com/LinHanlove/unocss) - 具有高性能且极具灵活性的即时原子化 CSS 引擎。
 
 该项目诞生于我在国庆期间的做的一些随机实验。从使用者的角度出发去探索灵活性和直观性的最佳平衡，加上按需生成的思想，这些实验的最终结果在不少方面甚至超出了我的预期。接下来让我为你逐一介绍：
 
@@ -247,7 +247,7 @@ import PresetTachyons from '@unocss/preset-tachyons'
 import PresetBootstrap from '@unocss/preset-bootstrap'
 import PresetTailwind from '@unocss/preset-tailwind'
 import PresetWindi from '@unocss/preset-windi'
-import PresetAntfu from '@antfu/oh-my-cool-unocss-preset'
+import PresetAntfu from '@LinHan/oh-my-cool-unocss-preset'
 
 export default {
   plugins: [
@@ -349,15 +349,15 @@ variants: [
 ]
 ```
 
-你可以参考 [文档](https://github.com/antfu/unocss#custom-variants) 了解更多细节。
+你可以参考 [文档](https://github.com/LinHanlove/unocss#custom-variants) 了解更多细节。
 
 ### 预设
 
 你可以将自己的自定义规则和可变修饰打包成预设，与他人分享，或是使用 UnoCSS 作为引擎创建你自己的原子化 CSS 框架！
 
-同时，我们在发布时也提供了 [一些预设](https://github.com/antfu/unocss#presets) 供你快速上手。
+同时，我们在发布时也提供了 [一些预设](https://github.com/LinHanlove/unocss#presets) 供你快速上手。
 
-值得一提的是，默认的 [`@unocss/preset-uno`](https://github.com/antfu/unocss/tree/main/packages/preset-uno) 预设（**实验阶段**）是一系列流行的原子化框架的 **通用超集**，包括了 Tailwind CSS，Windi CSS，Bootstrap，Tachyons 等。
+值得一提的是，默认的 [`@unocss/preset-uno`](https://github.com/LinHanlove/unocss/tree/main/packages/preset-uno) 预设（**实验阶段**）是一系列流行的原子化框架的 **通用超集**，包括了 Tailwind CSS，Windi CSS，Bootstrap，Tachyons 等。
 
 例如，`ml-3`（Tailwind），`ms-2`（Bootstrap），`ma4`（Tachyons），`mt-10px`（Windi CSS）均会生效。
 
@@ -370,7 +370,7 @@ variants: [
 .mt-10px { margin-top: 10px; }
 ```
 
-[了解更多关于默认预设的信息](https://github.com/antfu/unocss/tree/main/packages/preset-uno)。
+[了解更多关于默认预设的信息](https://github.com/LinHanlove/unocss/tree/main/packages/preset-uno)。
 
 ### 灵活性
 
@@ -408,7 +408,7 @@ variants: [
 
 在更好的按类型进行组织的同时，也节省了重复输入相同前缀的时间。
 
-在 UnoCSS 中，我们也实现了属性化模式，只使用 [**一个可变修饰**](https://github.com/antfu/unocss/blob/main/packages/preset-attributify/src/variant.ts) 和 [**一个提取器**](https://github.com/antfu/unocss/blob/main/packages/preset-attributify/src/extractor.ts)，总共 **代码行数不超过 100**！更重要的是，它直接适用于你自定义的任何规则！
+在 UnoCSS 中，我们也实现了属性化模式，只使用 [**一个可变修饰**](https://github.com/LinHanlove/unocss/blob/main/packages/preset-attributify/src/variant.ts) 和 [**一个提取器**](https://github.com/LinHanlove/unocss/blob/main/packages/preset-attributify/src/extractor.ts)，总共 **代码行数不超过 100**！更重要的是，它直接适用于你自定义的任何规则！
 
 除了 Windi CSS 的属性化模式，仅需改动几行代码，我们还实现了无值的属性的支持：
 
@@ -422,7 +422,7 @@ variants: [
 <div m-2 rounded text-teal-400 />
 ```
 
-整个属性化模式是通过 [`@unocss/preset-attributify`](https://github.com/antfu/unocss/blob/main/packages/preset-attributify) 预设提供的，详细的使用方法请参考其文档。
+整个属性化模式是通过 [`@unocss/preset-attributify`](https://github.com/LinHanlove/unocss/blob/main/packages/preset-attributify) 预设提供的，详细的使用方法请参考其文档。
 
 ###### 纯 CSS 图标
 
@@ -467,7 +467,7 @@ function toggleDark() {
 
 与可变修饰结合，你甚至可以根据悬停状态或颜色模式来切换图标。得益于 [Iconify](https://iconify.design/) 项目，你可以从一百余个热门图标集合（Material Design Icons， Ant Design Icons 等等）中获得 **超过一万个图标** 供你按需使用。
 
-同样的，这个功能的实现代码并未超过 100 行。具体请参考 [`@unocss/preset-icons`](https://github.com/antfu/unocss/blob/main/packages/preset-icons) 预设的实现了解其中的魔法。
+同样的，这个功能的实现代码并未超过 100 行。具体请参考 [`@unocss/preset-icons`](https://github.com/LinHanlove/unocss/blob/main/packages/preset-icons) 预设的实现了解其中的魔法。
 
 希望这些预设可以让你对 UnoCSS 的灵活性有一个大致的了解。它还处于一个非常早期的阶段，有很多可能性等待我们去探索。
 
@@ -501,7 +501,7 @@ function toggleDark() {
 
 ## 性能
 
-考虑到 UnoCSS 带来的灵活性和想象力，坦率地说，我认为性能可能不是那么重要的事情。出于好奇，我写了一个 [简单的 benchmark](https://github.com/antfu/unocss/tree/main/bench) 来比较性能。结果令人惊讶：
+考虑到 UnoCSS 带来的灵活性和想象力，坦率地说，我认为性能可能不是那么重要的事情。出于好奇，我写了一个 [简单的 benchmark](https://github.com/LinHanlove/unocss/tree/main/bench) 来比较性能。结果令人惊讶：
 
 ```yaml
 10/21/2021, 2:17:45 PM
@@ -570,12 +570,12 @@ UnoCSS 仍处于实验阶段，但由于其精简的设计，生成的结果已�
 
 注意：它并非被设计成 Windi CSS 或 Tailwind 的替代品（考虑等待 Windi CSS v4）。我们不建议将现有项目完全迁移到 UnoCSS。你可以在新的项目中试用它，或者将它作为你现有 CSS 框架的补充（例如，禁用默认预设，只使用纯 CSS 图标的预设，或者自定义你的规则）。
 
-顺便说一句，目前 [你正在阅读的网站](https://github.com/antfu/antfu.me) 就构建于 UnoCSS 之上，供你参考 :P。
+顺便说一句，目前 [你正在阅读的网站](https://github.com/LinHanlove/antfu.me) 就构建于 UnoCSS 之上，供你参考 :P。
 
 同时，欢迎分享你正在制作的预设或帮助我们贡献默认的预设。期待看到你能够蹦出什么新想法！
 
 ## 结束语
 
-非常感谢你的阅读！如果你对它感兴趣，请记得查看 [`antfu/unocss`](https://github.com/antfu/unocss) 仓库以了解更多细节，也可以通过 [**在线 Playground**](https://unocss.antfu.me/) 进行尝试。
+非常感谢你的阅读！如果你对它感兴趣，请记得查看 [`antfu/unocss`](https://github.com/LinHanlove/unocss) 仓库以了解更多细节，也可以通过 [**在线 Playground**](https://unocss.antfu.me/) 进行尝试。
 
-欢迎评论或转发 [此推文](https://twitter.com/antfu7/status/1452802545118711812)，让我知道你的想法！🙌
+欢迎评论或转发 [此推文](https://x.com/HanLinsonglove/status/1452802545118711812)，让我知道你的想法！🙌

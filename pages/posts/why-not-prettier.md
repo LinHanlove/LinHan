@@ -63,11 +63,11 @@ Prettier as a code formatter, only cares about code styles but not the logic. Th
 However, the approach creates quite a lot of mess to me:
 
 <Tweet conversation="none">
-<p lang="en" dir="ltr">My points here:<br><br>1. Prettier Only is cool - It&#39;s out-of-box.<br>2. If you need to use ESLint, it can do the formatting as good as Prettier - and more configurable</p>&mdash; LinHan (@antfu7) <a href="https://twitter.com/antfu7/status/1279149211523538944?ref_src=twsrc%5Etfw">July 3, 2020</a>
+<p lang="en" dir="ltr">My points here:<br><br>1. Prettier Only is cool - It&#39;s out-of-box.<br>2. If you need to use ESLint, it can do the formatting as good as Prettier - and more configurable</p>&mdash; LinHan (@LinHan7) <a href="https://x.com/HanLinsonglove/status/1279149211523538944?ref_src=twsrc%5Etfw">July 3, 2020</a>
 </Tweet>
 
 <Tweet conversation="none">
-<p lang="en" dir="ltr">3. Prettier + ESLint still needs a lot of configs - It doesn&#39;t make your life easier.<br>4. You can have full control in ESLint but not in Prettier, mixing them together feels weird.<br>5. I don&#39;t think parsing two times can be faster (maybe I am wrong)</p>&mdash; LinHan (@antfu7) <a href="https://twitter.com/antfu7/status/1279149212974776320?ref_src=twsrc%5Etfw">July 3, 2020</a>
+<p lang="en" dir="ltr">3. Prettier + ESLint still needs a lot of configs - It doesn&#39;t make your life easier.<br>4. You can have full control in ESLint but not in Prettier, mixing them together feels weird.<br>5. I don&#39;t think parsing two times can be faster (maybe I am wrong)</p>&mdash; LinHan (@LinHan7) <a href="https://x.com/HanLinsonglove/status/1279149212974776320?ref_src=twsrc%5Etfw">July 3, 2020</a>
 </Tweet>
 
 [ESLint's auto fix](https://developer.ibm.com/articles/auto-fix-and-format-your-javascript-with-eslint/) could also do the formatting just as well as Prettier - with much more freedom of choices.
@@ -78,24 +78,24 @@ ESLint is essential to my workflow to ensure the code quality. If ESLint is alre
 
 I spent some time configuring my ESLint and made it a config preset:
 
-<GitHubLink repo="antfu/eslint-config" name="@antfu/eslint-config" />
+<GitHubLink repo="antfu/eslint-config" name="@LinHan/eslint-config" />
 
 It turns out, the setup configuration can also be very minimal:
 
 ```bash
-npm i -D @antfu/eslint-config
+npm i -D @LinHan/eslint-config
 ```
 
 ```js
 // eslint.config.js
-import antfu from '@antfu/eslint-config'
+import antfu from '@LinHan/eslint-config'
 
 export default antfu({
   // customizations
 })
 ```
 
-That's all you need. With the IDE extensions, it's also possible to trigger auto fixing on save. It works similarly to Prettier but respects your choices when to break the lines, with many best practices of linting. It's also quite opinionated, but thanks to the [new Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new), it gives you [the full control of customizations](https://github.com/antfu/eslint-config#customization) over every single bit that you want to change. Moreover, you can always fork it to make your own versions.
+That's all you need. With the IDE extensions, it's also possible to trigger auto fixing on save. It works similarly to Prettier but respects your choices when to break the lines, with many best practices of linting. It's also quite opinionated, but thanks to the [new Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new), it gives you [the full control of customizations](https://github.com/LinHanlove/eslint-config#customization) over every single bit that you want to change. Moreover, you can always fork it to make your own versions.
 
 > Sidenote: You might hear so voicing saying "Don't use ESLint for formatting" - [here are some discussions and a response from the ESLint team](https://github.com/eslint/eslint.org/issues/435), for you to make your own judgement.
 

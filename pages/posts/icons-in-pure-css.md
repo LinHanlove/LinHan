@@ -10,7 +10,7 @@ description: The icon solution in pure CSS.
 
 > [中文 Chinese Version](/posts/icons-in-pure-css-zh)
 
-In my previous post about [Reimagine Atomic CSS](/posts/reimagine-atomic-css#pure-css-icons), I introduced a preset of [UnoCSS](https://github.com/antfu/unocss) that provides the ability to **use any icons on-demand in purely CSS**. Today in this post, I'd like to share with you how we made it possible.
+In my previous post about [Reimagine Atomic CSS](/posts/reimagine-atomic-css#pure-css-icons), I introduced a preset of [UnoCSS](https://github.com/LinHanlove/unocss) that provides the ability to **use any icons on-demand in purely CSS**. Today in this post, I'd like to share with you how we made it possible.
 
 ## My Icon Explorations
 
@@ -27,7 +27,7 @@ I know there is a Pure CSS icon solution called [`css.gg`](https://github.com/as
 
 ## The Idea
 
-The idea come from [this feature request](https://github.com/antfu/unplugin-icons/issues/88) created by [@husayt](https://github.com/husayt) to `unplugin-icons` and the initial implementation in [this pull request](https://github.com/antfu/unplugin-icons/pull/90) by [@userquin](https://github.com/userquin). The idea here is quite straightforward - to generate CSS with the icons in [DataURI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) as the background image.
+The idea come from [this feature request](https://github.com/LinHanlove/unplugin-icons/issues/88) created by [@husayt](https://github.com/husayt) to `unplugin-icons` and the initial implementation in [this pull request](https://github.com/LinHanlove/unplugin-icons/pull/90) by [@userquin](https://github.com/userquin). The idea here is quite straightforward - to generate CSS with the icons in [DataURI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) as the background image.
 
 ```css
 .my-icon {
@@ -83,8 +83,8 @@ function encodeSvg(svg: string) {
     .replace(/"/g, '\'')
     .replace(/%/g, '%25')
     .replace(/#/g, '%23')
-    .replace(/{/g, '%7B')
-    .replace(/}/g, '%7D')
+    .replace(/\{/g, '%7B')
+    .replace(/\}/g, '%7D')
     .replace(/</g, '%3C')
     .replace(/>/g, '%3E')
 }
@@ -212,7 +212,7 @@ To see and find all the icons available, you can check out my other project [Ic�
 
 ## Use It
 
-If you want to try this icons solution in your project, you can install [UnoCSS](https://github.com/antfu/unocss) and the icons preset:
+If you want to try this icons solution in your project, you can install [UnoCSS](https://github.com/LinHanlove/unocss) and the icons preset:
 
 ```bash
 npm i -D unocss @unocss/preset-icons @iconify/json

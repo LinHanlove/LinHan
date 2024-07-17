@@ -12,7 +12,7 @@ duration: 15min
 > - [👉 **Refining AI Generated QR Code**](/posts/ai-qrcode-refine)
 > - [📚 **Stable Diffusion QR Code 101**](/posts/ai-qrcode-101)
 
-Yesterday, I created this image using [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) and [ControlNet](https://github.com/lllyasviel/ControlNet), and shared on [Twitter](https://twitter.com/antfu7/status/1672671149698818048) and [Instagram](https://www.instagram.com/p/Ct4fpkgtc1W/) -- an illustration that also functions as a scannable QR code.
+Yesterday, I created this image using [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) and [ControlNet](https://github.com/lllyasviel/ControlNet), and shared on [Twitter](https://x.com/HanLinsonglove/status/1672671149698818048) and [Instagram](https://www.instagram.com/p/Ct4fpkgtc1W/) -- an illustration that also functions as a scannable QR code.
 
 ![](/images/ai-qrcode-final.jpg)
 
@@ -158,7 +158,7 @@ Here are the list of resources for easier reference.
 
 ### Tools
 
-- [Hardwares & Softwares I am using](https://github.com/antfu/use).
+- [Hardwares & Softwares I am using](https://github.com/LinHanlove/use).
 - [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - Web UI for Stable Diffusion
   - [canisminor1990/sd-webui-kitchen-theme](https://github.com/canisminor1990/sd-webui-kitchen-theme) - Nice UI enhancement
 - [Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet) - ControlNet extension for the webui

@@ -19,7 +19,7 @@ Browsers' new [View Transitions API](https://developer.mozilla.org/en-US/docs/We
 Roughly a year ago, [Eduardo @posva](https://github.com/posva) and I came up with the idea of using Shiki combined with Vue's [`<TransitionGroup>`](https://vuejs.org/guide/built-ins/transition-group) to achieve a similar effect for code blocks:
 
 <Tweet h-650px>
-<p lang="en" dir="ltr">Do you like Magic Move in Keynote for code?<a href="https://twitter.com/antfu7?ref_src=twsrc%5Etfw">@antfu7</a> and I are cooking something 😎 <a href="https://t.co/9JxjCzRA1S">pic.twitter.com/9JxjCzRA1S</a></p>&mdash; Eduardo.𝚟𝚞𝚎 (@posva) <a href="https://twitter.com/posva/status/1619083357756821504?ref_src=twsrc%5Etfw">January 27, 2023</a>
+<p lang="en" dir="ltr">Do you like Magic Move in Keynote for code?<a href="https://x.com/HanLinsonglove?ref_src=twsrc%5Etfw">@LinHan7</a> and I are cooking something 😎 <a href="https://t.co/9JxjCzRA1S">pic.twitter.com/9JxjCzRA1S</a></p>&mdash; Eduardo.𝚟𝚞𝚎 (@posva) <a href="https://twitter.com/posva/status/1619083357756821504?ref_src=twsrc%5Etfw">January 27, 2023</a>
 </Tweet>
 
 We managed to make the proof of concept work, as shown in the video. However, due to some hard edge cases, both of us were busy with other things, and we didn't manage to make it a usable library at that time. It has come to our discussions from time to time but we didn't come up with a good solution. Until one day, a few weeks ago while I was preparing my slides, my [~~productive~~ procrastination](https://lmddgtfy.net/?q=Productive%20Procrastination) kicked in and I decided to give it another try to ~~escape from my slides~~.
@@ -27,7 +27,7 @@ We managed to make the proof of concept work, as shown in the video. However, du
 And luck me, I found a quite nice approach and made it happen:
 
 <Tweet h-670px>
-<p lang="en" dir="ltr">The procrastination in preparing talks drove me to bring up the rework of the idea we had last year with <a href="https://twitter.com/posva?ref_src=twsrc%5Etfw">@posva</a> - animate Shiki tokens like Magic Move! 🪄<br><br>Found a much more reliable approach that could finally come out as a library (soon)<a href="https://t.co/b5SgQtTw2s">https://t.co/b5SgQtTw2s</a> <a href="https://t.co/s5LutlYmAK">pic.twitter.com/s5LutlYmAK</a></p>&mdash; LinHan (@antfu7) <a href="https://twitter.com/antfu7/status/1760751386122211371?ref_src=twsrc%5Etfw">February 22, 2024</a>
+<p lang="en" dir="ltr">The procrastination in preparing talks drove me to bring up the rework of the idea we had last year with <a href="https://twitter.com/posva?ref_src=twsrc%5Etfw">@posva</a> - animate Shiki tokens like Magic Move! 🪄<br><br>Found a much more reliable approach that could finally come out as a library (soon)<a href="https://t.co/b5SgQtTw2s">https://t.co/b5SgQtTw2s</a> <a href="https://t.co/s5LutlYmAK">pic.twitter.com/s5LutlYmAK</a></p>&mdash; LinHan (@LinHan7) <a href="https://x.com/HanLinsonglove/status/1760751386122211371?ref_src=twsrc%5Etfw">February 22, 2024</a>
 </Tweet>
 
 Made [a playground](https://shiki-magic-move.netlify.app/) where you can try it out yourself, and you can find the source code at <GitHubLink repo="shikijs/shiki-magic-move" />.
@@ -46,7 +46,7 @@ In the playground above, we assign a key to each token. `Move` tokens come with 
 
 When doing highlighting, [Shiki](https://github.com/shikijs/shiki) turns the input code into an array of tokens. We can run Shiki twice for code before and after to get two collections of tokens. It should be fairly simple to find the `Enter` and `Leave` tokens by running two loops to compare the two collections. However, the challenge is to find good pairs of `Move` tokens. If we only pair them by the content of each token, it would be the case that 1-to-many or many-to-1 might make the pair transition off.
 
-I came up with the idea of using a text diff algorithm to find the chunks of the code that are matched between the two versions. I ended up using Google's [Diff Match Patch](https://github.com/google/diff-match-patch) (I later refactored it into ESM as [`diff-match-patch-es`](https://github.com/antfu/diff-match-patch-es)) to achieve this.
+I came up with the idea of using a text diff algorithm to find the chunks of the code that are matched between the two versions. I ended up using Google's [Diff Match Patch](https://github.com/google/diff-match-patch) (I later refactored it into ESM as [`diff-match-patch-es`](https://github.com/LinHanlove/diff-match-patch-es)) to achieve this.
 With the diff result, we can now [reliably find the pairs](https://github.com/shikijs/shiki-magic-move/blob/e409aa5cf877a4005cf2b01729f1113beb405d13/src/core.ts#L226-L256) of the `Move` tokens without worrying that tokens might travel to the wrong place.
 
 With this core logic in place, we can generate the correct keys for each token for the connection. This made the rest of the task clear, we just needed to apply different transitions to different types of tokens. We could feed them into any key-based transition library, for example, Vue provides a built-in [`<TransitionGroup>` component](https://vuejs.org/guide/built-ins/transition-group) that does the job perfectly, [live example](https://vuejs.org/examples/#list-transition).

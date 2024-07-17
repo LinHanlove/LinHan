@@ -19,8 +19,8 @@ Hello 大家好，非常感谢丁香园这次的邀请，也非常荣幸能够�
 
 我叫 LinHan，是 Vue 的 Core Team 的一员，我在 Vue 主要负责 @vue/composition-api 这个项目的维护。这是一个面向 Vue 2 的插件，它在 Vue 2 中增加了 Vue 3 的 Composition API 的支持。我最近也加入了 Vite 负责一些 Code Review 的工作。可以在下面这些平台找到我。
 
-- GitHub [@antfu](https://github.com/antfu)
-- Twitter [@antfu7](https://twitter.com/antfu7)
+- GitHub [@LinHan](https://github.com/LinHanlove)
+- Twitter [@LinHan7](https://x.com/HanLinsonglove)
 - Blog [antfu.me](https://antfu.me)
 
 ### 介绍
@@ -319,7 +319,7 @@ export function useLocalStorage(key, defaultValue) {
 
 #### 现有逻辑组件库
 
-现有的 Vue 3 已经可以使用的有两个主要的逻辑的组件库，[`VueUse`](https://github.com/antfu/vueuse) 和 [`vue-composable`](https://github.com/pikax/vue-composable)。有点像 React 中的 `react-use` 或者 `ahooks` 这一类的工具。VueUse 提供了更加细粒度的 Web API 以及工具分装。`vue-composable` 是由另外一个 Core Team Member [@pikax](https://github.com/pikax) 做的，它提供了更多常用的逻辑封装。例如 `useI18n`, `useValidation` 等等。这些功能直接实现在了这个工具里面，而不需要再去安装另外依赖于别的库的。
+现有的 Vue 3 已经可以使用的有两个主要的逻辑的组件库，[`VueUse`](https://github.com/LinHanlove/vueuse) 和 [`vue-composable`](https://github.com/pikax/vue-composable)。有点像 React 中的 `react-use` 或者 `ahooks` 这一类的工具。VueUse 提供了更加细粒度的 Web API 以及工具分装。`vue-composable` 是由另外一个 Core Team Member [@pikax](https://github.com/pikax) 做的，它提供了更多常用的逻辑封装。例如 `useI18n`, `useValidation` 等等。这些功能直接实现在了这个工具里面，而不需要再去安装另外依赖于别的库的。
 
 ### 组合式 API 生态
 
@@ -345,7 +345,7 @@ useDevtoolsInspector({ counter })
 
 解决方案就是我们可能需要维护两个版本，通过发布不同的 npm 包实现实现不同的版本，再让用户安装的时候去指定他要安装哪个版本。或者是说我们可能可以只维护一份代码，但是我们写一个发布的脚本，在打包的时候去替换掉我们刚刚讲的这个 API。那我们可以在针对 Vue 3 的时候直接从 `vue` 里面引入这些API，在针对 Vue 2 的时候从 `@vue/composition-api`。但是这样的问题虽然你让你更加轻松的只维护一份代码，但是你还是同时要发布两份版本，因为这两个版本的代码是还是没有办法兼容的。
 
-为了解决这个问题，我做了一个工具叫做 [`vue-demi`](https://github.com/antfu/vue-demi)，它是一个为工具库服务的工具。如果使用 `vue-demi` 的话你只需要重构代码从 `vue-demi` 里面引入所有和 Vue 有关的 API，像是 `ref` 和 `reactive`。`vue-demi` 会使用 `postintall` 去检测当前的 Vue 版本，然后根据用户安装的版本去重新定向到对应的 `vue` 或者 `@vue/composition-api` 的包。那么这样的话我们就实现了同一个包 npm 包可以同时 Vue 2 和 3 两个版本。
+为了解决这个问题，我做了一个工具叫做 [`vue-demi`](https://github.com/LinHanlove/vue-demi)，它是一个为工具库服务的工具。如果使用 `vue-demi` 的话你只需要重构代码从 `vue-demi` 里面引入所有和 Vue 有关的 API，像是 `ref` 和 `reactive`。`vue-demi` 会使用 `postintall` 去检测当前的 Vue 版本，然后根据用户安装的版本去重新定向到对应的 `vue` 或者 `@vue/composition-api` 的包。那么这样的话我们就实现了同一个包 npm 包可以同时 Vue 2 和 3 两个版本。
 
 如果需要进行一些单元测试的话，大家可以去看看 @pikax 的这个关于 [单元测试同时兼容两个版本的文章](https://dev.to/pikax/how-to-test-your-library-for-vue-2-and-vue-next-42ao)。
 
@@ -359,7 +359,7 @@ useDevtoolsInspector({ counter })
 
 #### Reactivue
 
-然后再来就是我之前做的一个 Proof of Concept，叫做 [ReactiVue](https://github.com/antfu/reactivue)。在 React 中使用 Vue 的 Composition API。可以看到右边的这个例子，ReactiVue 是一个以 React Hooks 形式实现的，`useSetup` 提供一个和 Vue 等价的 `setup()` 函数。最后 return 的响应式数据会再传出来给 React 组件，当响应式数据更新时会触发 React 组件的重新渲染。ReactiVue 只依赖于 `@vue/reactivity`，同时又包装了 React 的生命周期，让他们以 Vue 的形式暴露出来。这样就可以去复用 Vue 的组件库，我们这边做了测试的有 VueUse 和 [pinia](https://github.com/posva/pinia)，通过包的重命名就可以直接导出使用。
+然后再来就是我之前做的一个 Proof of Concept，叫做 [ReactiVue](https://github.com/LinHanlove/reactivue)。在 React 中使用 Vue 的 Composition API。可以看到右边的这个例子，ReactiVue 是一个以 React Hooks 形式实现的，`useSetup` 提供一个和 Vue 等价的 `setup()` 函数。最后 return 的响应式数据会再传出来给 React 组件，当响应式数据更新时会触发 React 组件的重新渲染。ReactiVue 只依赖于 `@vue/reactivity`，同时又包装了 React 的生命周期，让他们以 Vue 的形式暴露出来。这样就可以去复用 Vue 的组件库，我们这边做了测试的有 VueUse 和 [pinia](https://github.com/posva/pinia)，通过包的重命名就可以直接导出使用。
 
 ```tsx
 import React from 'React'
@@ -455,4 +455,4 @@ data.value.hello = 'world'
 
 这些就是我现在正在做的一些探索，我觉得 Vue 的响应式系统非常的有趣，也相信未来还会有更多的的可能性和应用场景，希望可以和大家一起进行进一步的探索，找到一些有趣的使用方式和最佳实践。
 
-我的分享就到这里，如果有任何问题欢迎通过 hi@antfu.me 给我发送邮件。谢谢大家.
+我的分享就到这里，如果有任何问题欢迎通过 hi@LinHan.me 给我发送邮件。谢谢大家.

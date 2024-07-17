@@ -298,4 +298,4 @@ Once your published your package, you can verify if it follows the best practice
 
 ## Final words
 
-This blog post showcased you only a few features of both tools. Do check their docs for more details. And hope you find these setups useful for building your own libraries. If you have any comments or suggestions, ping me on Twitter [@antfu7](https://twitter.com/antfu7). Happy hacking!
+This blog post showcased you only a few features of both tools. Do check their docs for more details. And hope you find these setups useful for building your own libraries. If you have any comments or suggestions, ping me on Twitter [@LinHan7](https://x.com/HanLinsonglove). Happy hacking!

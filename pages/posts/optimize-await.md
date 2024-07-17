@@ -93,4 +93,4 @@ export function createSingletonPromise<T>(fn: () => Promise<T>) {
 }
 ```
 
-This function is also available in my utilities collection [`@antfu/utils`](https://github.com/antfu/utils)
+This function is also available in my utilities collection [`@LinHan/utils`](https://github.com/LinHanlove/utils)
