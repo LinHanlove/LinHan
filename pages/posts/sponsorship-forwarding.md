@@ -3,7 +3,7 @@ title: Initiative on Sponsorship Forwarding
 date: 2024-04-20
 lang: en
 duration: 10min
-description: An initiative to support open-source ecosystem by Anthony Fu.
+description: An initiative to support open-source ecosystem by LinHan.
 ---
 
 [[toc]]
@@ -81,9 +81,9 @@ Another popular platform for open-source projects to receive sponsorships is [Op
 
 For open-source projects, [Open Source Collective](https://www.oscollective.org/) is a commonly used fiscal host on Open Collective. It charges a total of 10% transaction and hosting fees upfront. The important part is that it allows funds to be forwarded to other projects **on the same fiscal host with no additional fees**. This makes it a much better fit for the sponsorship forwarding use case.
 
-## Anthony Fu's Collective
+## LinHan's Collective
 
-So, I came up with the idea of creating my personal collective: {Anthony Fu Collective}
+So, I came up with the idea of creating my personal collective: {LinHan Collective}
 
 Where you can sponsor my work across the ecosystem, including but not limited to:<br>
 {Vite} {Vue} {Nuxt} {Vitest} {VueUse} {UnoCSS} {Slidev} {Elk} {Shiki} {TwoSlash} {ESLint Stylistic}
@@ -100,8 +100,8 @@ The main difference is that I **won't take the funds for myself**;<br><span op50
 
 To allow differentiating easily, I will treat the funds on [GitHub Sponsors](https://github.com/sponsors/antfu) and [Open Collective](https://opencollective.com/antfu) differently:
 
-- {Sponsor Anthony Fu on Open Collective|https://opencollective.com/antfu} - To sponsor the dependencies and ecosystem of the projects Anthony maintains.
-- {Sponsor Anthony Fu on GitHub Sponsors|https://github.com/sponsors/antfu} - To sponsor Anthony's personal work on open-source projects.
+- {Sponsor LinHan on Open Collective|https://opencollective.com/antfu} - To sponsor the dependencies and ecosystem of the projects Anthony maintains.
+- {Sponsor LinHan on GitHub Sponsors|https://github.com/sponsors/antfu} - To sponsor Anthony's personal work on open-source projects.
 
 I would generally recommend sponsoring on Open Collective first to support the entire ecosystem and open source. Well, I'd also be grateful if you could sponsor on both platforms :P
 

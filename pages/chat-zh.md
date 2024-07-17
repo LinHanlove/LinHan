@@ -1,5 +1,5 @@
 ---
-title: 和 Anthony Fu 聊聊天！
+title: 和 LinHan 聊聊天！
 display: 聊聊天！
 image: https://antfu.me/og-chat.png
 ---

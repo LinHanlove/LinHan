@@ -27,7 +27,6 @@ declare module 'vue-router/auto-routes' {
     '/demos': RouteRecordInfo<'/demos', '/demos', Record<never, never>, Record<never, never>>,
     '/giving-talks': RouteRecordInfo<'/giving-talks', '/giving-talks', Record<never, never>, Record<never, never>>,
     '/notes': RouteRecordInfo<'/notes', '/notes', Record<never, never>, Record<never, never>>,
-    '/podcasts': RouteRecordInfo<'/podcasts', '/podcasts', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/about-yak-shaving': RouteRecordInfo<'/posts/about-yak-shaving', '/posts/about-yak-shaving', Record<never, never>, Record<never, never>>,
     '/posts/about-yak-shaving-zh': RouteRecordInfo<'/posts/about-yak-shaving-zh', '/posts/about-yak-shaving-zh', Record<never, never>, Record<never, never>>,
@@ -100,13 +99,12 @@ declare module 'vue-router/auto-routes' {
     '/posts/vueuse-best-practice-vueconf-china-2022': RouteRecordInfo<'/posts/vueuse-best-practice-vueconf-china-2022', '/posts/vueuse-best-practice-vueconf-china-2022', Record<never, never>, Record<never, never>>,
     '/posts/watch-with-reactivity': RouteRecordInfo<'/posts/watch-with-reactivity', '/posts/watch-with-reactivity', Record<never, never>, Record<never, never>>,
     '/posts/why-not-prettier': RouteRecordInfo<'/posts/why-not-prettier', '/posts/why-not-prettier', Record<never, never>, Record<never, never>>,
+    '/posts/why-not-prettier-copy': RouteRecordInfo<'/posts/why-not-prettier-copy', '/posts/why-not-prettier-copy', Record<never, never>, Record<never, never>>,
     '/posts/why-not-prettier-zh': RouteRecordInfo<'/posts/why-not-prettier-zh', '/posts/why-not-prettier-zh', Record<never, never>, Record<never, never>>,
     '/posts/why-reproductions-are-required': RouteRecordInfo<'/posts/why-reproductions-are-required', '/posts/why-reproductions-are-required', Record<never, never>, Record<never, never>>,
     '/posts/why-reproductions-are-required-zh': RouteRecordInfo<'/posts/why-reproductions-are-required-zh', '/posts/why-reproductions-are-required-zh', Record<never, never>, Record<never, never>>,
     '/posts/windicss-and-tailwind-jit': RouteRecordInfo<'/posts/windicss-and-tailwind-jit', '/posts/windicss-and-tailwind-jit', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
     '/sponsors-list': RouteRecordInfo<'/sponsors-list', '/sponsors-list', Record<never, never>, Record<never, never>>,
-    '/streams': RouteRecordInfo<'/streams', '/streams', Record<never, never>, Record<never, never>>,
-    '/talks': RouteRecordInfo<'/talks', '/talks', Record<never, never>, Record<never, never>>,
   }
 }
