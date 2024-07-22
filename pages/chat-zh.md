@@ -14,4 +14,4 @@ image: https://antfu.me/og-chat.png
 
 我希望可以让这样的聊天的简单且开放。你可以使用下面的链接预约一个 10 分钟的视频会议和我聊聊你的疑问。时间对我而言十分宝贵，我相信你也是，希望你能提前做一些准备，对你的问题有所研究和思考。我期待与你有一个短暂但有意义的聊天！
 
-<CalCom link="antfu7/quick-chat" title="约个时间聊聊天" />
+<CalCom link="linhan/chat-me" title="Book a chat" />
