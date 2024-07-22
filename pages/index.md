@@ -6,11 +6,11 @@ art: random
 
 Hey, I am LinHan, a fanatical open sourceror.
 
-<!-- Working at {HangZhou First Show}<br> -->
+Working at HangZhou First Show<br>
 
-<!-- Creator of {Vitest} {Slidev} {VueUse} {UnoCSS} {Elk} {Type Challenges}<br>
-Core team of {Vue} {Nuxt} {Vite}<br>
-Maintaining {Shiki} {Twoslash} {ESLint Stylistic} -->
+Understand or master **vue2/3** **uniApp** **weChat** **taro** **react** **nuxt** **vite** **pinia** **vuex** **TypeScript** **JavaScript** **NodeJs** **Express** **MySQL** **HarmonyOS** **TailwindCSS** **VueUse** **UnoCSS** <br>
+
+Create of **atom-tools**<br>
 
 Dreaming up ideas and making them come true is where my passion lies.
 
@@ -26,7 +26,7 @@ At the moment, I'm working on exciting projects at First Show.
 
 I'm deeply passionate about coding and continually honing my skills.
 
-I love to share knowledge and currently publish technical articles on Juejin.
+I love to share knowledge and currently publish technical articles on <a href="https://juejin.cn/user/2670060580903288/posts" target="_blank">JueJin</a>.
 
 to reach me out, we could have some coffee or work together.
 
@@ -38,9 +38,10 @@ Find me on
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://github.com/LinHanlove" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
+   <a href="https://juejin.cn/user/2670060580903288/posts" target="_blank"><span i-simple-icons:juejin /> JueJin</a>
   <!-- <a href="https://elk.zone/m.webtoo.ls/@LinHan" target="_blank"><span op75 i-simple-icons-mastodon/> Mastodon</a>
   <a href="https://www.twitter.com/antfu7" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
-  <a href="https://chat.antfu.me" target="_blank"><span op75 i-simple-icons-discord /> Discord Server</a>
+  <a href="https://chat.LinHan" target="_blank"><span op75 i-simple-icons-discord /> Discord Server</a>
   <a href="https://www.youtube.com/anthonyfu7" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
   <a href="https://www.instagram.com/antfu7" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
   <a href="https://space.bilibili.com/668380" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>

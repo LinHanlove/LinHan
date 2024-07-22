@@ -1,7 +1,7 @@
 ---
 title: 和 LinHan 聊聊天！
 display: 聊聊天！
-image: https://antfu.me/og-chat.png
+image: https://linhan.atomnotion.com/og-chat.png
 ---
 
 [English](/chat)

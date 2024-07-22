@@ -28,6 +28,7 @@ declare module 'vue-router/auto-routes' {
     '/giving-talks': RouteRecordInfo<'/giving-talks', '/giving-talks', Record<never, never>, Record<never, never>>,
     '/notes': RouteRecordInfo<'/notes', '/notes', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
+    '/posts/icons-in-pure-css': RouteRecordInfo<'/posts/icons-in-pure-css', '/posts/icons-in-pure-css', Record<never, never>, Record<never, never>>,
     '/posts/sliding-enter-animation': RouteRecordInfo<'/posts/sliding-enter-animation', '/posts/sliding-enter-animation', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
     '/sponsors-list': RouteRecordInfo<'/sponsors-list', '/sponsors-list', Record<never, never>, Record<never, never>>,

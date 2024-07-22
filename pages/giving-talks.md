@@ -26,7 +26,7 @@ You can use the following information to present me:
   <TextCopy>LinHan</TextCopy>
 
   <div text-right pr2 op50 font-bold>Avatar</div>
-  <div><a href="https://antfu.me/avatar.png" target="_blank">https://antfu.me/avatar.png</a></div>
+  <div><a href="https://github.com/LinHanlove/avatar.png" target="_blank">https://linhan.atomnotion.com/avatar.png</a></div>
 
   <div text-right pr2 op50 font-bold>Introduction</div>
   <TextCopy>A fanatical open sourceror. Core team member of Vue, Nuxt and Vite. Creator of Vitest, Slidev, VueUse, UnoCSS and Elk. Working at NuxtLabs.</TextCopy>
@@ -38,7 +38,7 @@ You can use the following information to present me:
   <TextCopy><a href="https://nuxtlabs.com/" target="_blank">NuxtLabs</a></TextCopy>
 
   <div text-right pr2 op50 font-bold>Website</div>
-  <TextCopy><a href="https://antfu.me" target="_blank">antfu.me</a></TextCopy>
+  <TextCopy><a href="https://linhan.atomnotion.com/" target="_blank">LinHan</a></TextCopy>
 
   <div text-right pr2 op50 font-bold>GitHub</div>
   <TextCopy><a href="https://github.com/LinHanlove" target="_blank">@LinHan</a></TextCopy>
